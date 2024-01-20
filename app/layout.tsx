@@ -1,16 +1,19 @@
-import * as React from 'react'
 
-// 1. import `ChakraProvider` component
-import { ChakraProvider } from '@chakra-ui/react'
+import React, { createContext, ReactNode } from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
 
-// Path: app/page.tsx
-import RootLayout from "./layout";
-export default function Page() {
+type RootLayoutProps = {
+  children: ReactNode;
+};
 
+export const MyContext = createContext<string>('');
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <ChakraProvider>
-      <h1>Hello, Next.js!</h1>
-    </ChakraProvider>
-  )
+    <MyContext.Provider value="Example Value">
+      <ChakraProvider>
+        {children}
+      </ChakraProvider>
+    </MyContext.Provider>
+  );
 }
-// Path: app/layout.tsx

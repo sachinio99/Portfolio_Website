@@ -1,8 +1,11 @@
-import * as React from 'react'
-
-// 1. import `ChakraProvider` component
-import { ChakraProvider } from '@chakra-ui/react'
+import React from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
+import RootLayout from './layout';
 
 export default function Page() {
-        return <h1>Hello, Next.js!</h1>   
-  }
+  return (
+    <RootLayout>
+      <h1>Hello, Next.js!</h1>
+    </RootLayout>
+  );
+}
