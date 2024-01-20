@@ -4,7 +4,8 @@ import RootLayout from './RootLayout';
 export default function Page() {
   return (
     <RootLayout>
-      <h1>Hello, Next.js!</h1>
+      <h1>Wht the fuck
+      </h1>
     </RootLayout>
   );
 }
