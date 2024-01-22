@@ -8,7 +8,16 @@ export const Navigation = () => {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/example">Example</Link>
+          <Link href="/resume">Resume</Link>
+        </li>
+        <li>
+          <Link href="/substack">Substack</Link>
+        </li>
+        <li>
+          <Link href="/project">What Im working on</Link>
+        </li>
+        <li>
+          <Link href="/blog">What Im Thinking About</Link>
         </li>
       </ul>
     </nav>

@@ -1,4 +1,4 @@
-export const Image = (props: any) => {
+const Image = (props: any) => {
     return (
       <img
         src={props.baseUrl + "original.webp"}
@@ -16,3 +16,5 @@ export const Image = (props: any) => {
     />
     );
   };
+
+  export default Image;
