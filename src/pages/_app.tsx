@@ -1,7 +1,9 @@
 import "../app/globals.css";
-import Layout from "../layout";
+import {Layout} from "../layout/index";
 
-export const App = ({ Component, pageProps }) => {
+import { AppProps } from 'next/app';
+
+export const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Layout>
