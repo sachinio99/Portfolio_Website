@@ -8,25 +8,20 @@ export const Home = () => {
     <section className="home">
       <div>
       <Image 
-            src="/public/homeImage/original.jpg" // Correct the path to your image
+            src="/public/homeImage/prof.jpg" // Correct the path to your image
             alt="A picture of me."
-            width={750}
-            height={750}
             loading="eager"
-            className="main"
+            width={500}
+            height={500}
+            className={"img"}
              // Add a class for styling
           />
       </div>
       <div>
-        <h1>Hello</h1>
+        My name is Sachin Shah and I am a Software Engineer with experience building products within the fintech and enterprise SaaS spaces. I am currently exploring projects
+        within the music and generative AI spaces. 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
+
         </p>
       </div>
     </section>

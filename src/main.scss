@@ -146,3 +146,10 @@ footer {
     }
   }
 }
+
+.image-container img {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  padding: 20px; /* Add some padding around the image */
+}
