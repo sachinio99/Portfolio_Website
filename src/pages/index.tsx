@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 export const Home = () => {
   return (
+    <Layout>
     <section className="home">
       <div>
       <Image 
@@ -25,6 +26,7 @@ export const Home = () => {
         </p>
       </div>
     </section>
+    </Layout>
   );
 };
 
