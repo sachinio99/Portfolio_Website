@@ -1,32 +1,43 @@
 import {Layout} from "../src/layout/index";
 import main from "../styles/main.module.css";
-
+import styled from "styled-components";
 import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
+
+const StyledText = styled.h1`
+  font-family: "Monsterrat", sans-serif;
+  font-size: 30px;
+  justify-content: left;
+`;
+
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+`;
 
 export const Home = () => {
   return (
-    <Layout>
+    
     <section className="home">
       <div>
-      <Image 
-            src="/public/homeImage/prof.jpg" // Correct the path to your image
-            alt="A picture of me."
-            loading="eager"
-            width={500}
-            height={500}
-            className={"img"}
-             // Add a class for styling
-          />
+      <Container>
+        <StyledText className="nameHeader">SACHIN SHAH</StyledText>
+        <Typewriter 
+        onInit={(typewriter) => { 
+          typewriter.typeString('Software Engineer + Building with AI + Writing about pivoting into product + Curating amazing playlists') 
+            .callFunction(() => { 
+              console.log('String typed out!'); 
+            }) 
+            .pauseFor(2500) 
+            .start(); 
+        }} 
+      /> 
+      </Container>
+      
       </div>
-      <div>
-        My name is Sachin Shah and I am a Software Engineer with experience building products within the fintech and enterprise SaaS spaces. I am currently exploring projects
-        within the music and generative AI spaces. 
-        <p>
-
-        </p>
-      </div>
+      
     </section>
-    </Layout>
   );
 };
 
