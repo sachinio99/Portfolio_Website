@@ -29,7 +29,7 @@ const Container = styled.div`
 const StyledIFrame = styled.iframe`
   position: absolute;
   top: 75%;
-  left: 42%;
+  left: 43%;
   justify-content: space-evenly;
 `;
 
