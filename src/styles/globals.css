@@ -121,3 +121,9 @@ main {
 nameHeader {
     text-align: center;
 }
+
+spotifyIframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
