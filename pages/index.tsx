@@ -43,7 +43,7 @@ export const Home = () => {
         <StyledText className="nameHeader">SACHIN SHAH</StyledText>
         <Typewriter 
         onInit={(typewriter) => { 
-          typewriter.typeString('Software Engineer + Building with AI + Writing about pivoting into product + Curating amazing playlists') 
+          typewriter.typeString('Software Engineer + Writing about pivoting into product + Curating amazing playlists') 
             .callFunction(() => { 
               console.log('String typed out!'); 
             }) 
