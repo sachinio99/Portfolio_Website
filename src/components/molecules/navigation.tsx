@@ -19,6 +19,9 @@ export const Navigation = () => {
         <li>
           <Link href="/blog">What Im Thinking About</Link>
         </li>
+        <li>
+          <Link href="/music">Look at your live Spotify Data</Link>
+        </li>
       </ul>
     </nav>
   );

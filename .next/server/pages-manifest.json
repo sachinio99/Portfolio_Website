@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/resume": "pages/resume.js",
-  "/": "pages/index.js"
+  "/music": "pages/music.js",
+  "/profilePage": "pages/profilePage.js",
+  "/api/spotify.auth": "pages/api/spotify.auth.js"
 }

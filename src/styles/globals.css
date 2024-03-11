@@ -127,3 +127,39 @@ spotifyIframe {
     top: 0;
     right: 0;
 }
+
+buttonBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100vh;
+}
+
+.login-button{
+    font-size: 16px;
+    color: rgb(11, 10, 10);
+    padding: 20px 40px;
+    border: 2px solid rgb(1, 19, 16);
+    margin: 10px;
+    background-color: rgb(55, 0, 255);
+    position: relative;
+    top: 5px;
+}
+
+.login-button-hover{
+    font-size: 16px;
+    color: rgb(11, 10, 10);
+    padding: 20px 40px;
+    border: 2px solid rgb(1, 19, 16);
+    margin: 10px;
+    font: 16px Arial;
+    background-color: rgb(30, 255, 0);
+    position: relative;
+}
+
+.profile-page-text{
+    font-size: 16px;
+    color: rgb(26, 199, 26);
+
+}
+

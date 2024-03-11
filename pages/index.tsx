@@ -34,7 +34,7 @@ const StyledIFrame = styled.iframe`
 `;
 
 
-
+var listeningString = "What I'm Currently Listening To"
 export const Home = () => {
   return (
     <section className="home">
@@ -43,7 +43,7 @@ export const Home = () => {
         <StyledText className="nameHeader">SACHIN SHAH</StyledText>
         <Typewriter 
         onInit={(typewriter) => { 
-          typewriter.typeString('Software Engineer + Writing about pivoting into product + Curating amazing playlists') 
+          typewriter.typeString('Software Engineer + Curating amazing playlists') 
             .callFunction(() => { 
               console.log('String typed out!'); 
             }) 
@@ -52,8 +52,8 @@ export const Home = () => {
         }} 
       /> 
       </Container>
-      <Header>What I'm Currently Listening To</Header>
-      <StyledIFrame src="https://open.spotify.com/embed/playlist/37i9dQZF1EP6YuccBxUcC1?utm_source=generator" width="300" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></StyledIFrame>
+      <Header>{listeningString}</Header>
+      <StyledIFrame src="https://open.spotify.com/embed/playlist/1bfjml9PsCJRZG8i1BZlQA?utm_source=generator" width="300" height="304" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></StyledIFrame>
       </div>
   
       
@@ -62,3 +62,5 @@ export const Home = () => {
 };
 
 export default Home;
+
+
