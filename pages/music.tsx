@@ -49,6 +49,8 @@ async function redirectToAuthFlow(clientId:string){
 
     Router.push(requestUrl)
     //document.location = `https://accounts.spotify.com/authorize?${params.toString()}`;
+
+    console.log("Done with auth dflow method")
 }
 
 function generateCodeVerifier(length: number) {
@@ -78,25 +80,26 @@ const startAuthFlow = async () =>{
   
     console.log(code);
             if(!code){
-                redirectToAuthFlow(clientId);
+                await redirectToAuthFlow(clientId);
                 await getAccessToken(clientId, code, codeVerifier, redirectUri);
-                console.log("getting access token", localStorage.getItem("accessToken"))    
+                console.log("getting access token", localStorage.getItem("accessToken"));
                 Router.push({
                     pathname: '/profilePage/',
                     query: { access_token: localStorage.getItem("accessToken"),
                             clientId: clientId }
-                });
+                });    
             }
                 else{
                 console.log("redirecting to auth flow");
                 await getAccessToken(clientId, code, codeVerifier, redirectUri);
                 console.log("getting access token", localStorage.getItem("accessToken"))
+                }
+
                 Router.push({
                     pathname: '/profilePage/',
                     query: { access_token: localStorage.getItem("accessToken"),
                             clientId: clientId }
                 });
-                }
             }
 
 const musicPage = () => {
