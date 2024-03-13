@@ -3,10 +3,12 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@pdftron/webviewer": "^10.7.3",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "framer-motion": "^10.18.0",
     "next": "^13.4.19",
+    "pdfjs-dist": "^4.0.379",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-pdf": "^7.7.1",
@@ -18,7 +20,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npm run download-webviewer",
+    "download-webviewer": "npx @pdftron/webviewer-downloader"
   },
   "devDependencies": {
     "@types/node": "20.5.9",
